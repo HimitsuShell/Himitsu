@@ -3,12 +3,28 @@
 </p>
 <p align="center">shell to obfuscated binary</p>
 
-## Introduction
-Official community and discussion hub for [HimitsuShell](https://himitsushell.com).
+## HimitsuShell
+Shell Script Compiler, Protection & Obfuscation.
+
+[HimitsuShell](https://himitsushell.com) compiles shell scripts into obfuscated binaries to protect source code from disclosure.
+
+It includes multiple protection features such as OS-level logging and hooking prevention, string and constant encryption, debugger detection, and advanced code obfuscation.
+
+## About This Repository
+
+HimitsuShell is a commercial software product.
+
+This repository does not contain the HimitsuShell source code.
+
+It serves as the official community hub for:
+
+- Discussions
+- Bug reports
+- Feature requests
 
 ## Discussions
 
-We welcome any types of feedback, including questions, improvement suggestions, bug reports, and use cases regarding HimitsuShell. Our maintainers regularly review and respond to your posts, so please feel free to share your thoughts.
+We welcome questions, feedback, bug reports, feature requests, and use cases related to HimitsuShell. Feel free to start a discussion and share your thoughts.
 
 ## Contact
 hjyun@mushsw.com
