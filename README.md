@@ -4,7 +4,7 @@
 <p align="center">shell to obfuscated binary</p>
 
 ## HimitsuShell
-Shell Script Compiler, Protection & Obfuscation.
+Shell Script Compiler, Protection & DRM Solution
 
 [HimitsuShell](https://himitsushell.com) compiles shell scripts into obfuscated binaries to protect source code from disclosure.
 
