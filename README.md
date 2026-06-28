@@ -2,13 +2,46 @@
   <a href="https://himitsushell.com/" target="blank"><img src="https://avatars.githubusercontent.com/u/264618628?s=200&v=4" width="120" alt="HimitsuShell Logo" /></a>
 </p>
 <p align="center">shell to obfuscated binary</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white" alt="Docker Ready" />
+  <img src="https://img.shields.io/badge/License-Commercial-6e7781" alt="Commercial License" />
+  <a href="https://github.com/HimitsuShell/Himitsu/releases">
+    <img src="https://img.shields.io/github/v/release/HimitsuShell/Himitsu?color=2da44e" alt="Latest Release" />
+  </a>
+</p>
 
 ## HimitsuShell
-Shell Script Compiler, Protection & DRM Solution
+Shell Script Compiler, Obfuscation & DRM
+
+![Demo](assets/demo.gif)
 
 [HimitsuShell](https://himitsushell.com) compiles shell scripts into obfuscated binaries to protect source code from disclosure.
 
 It includes multiple protection features such as OS-level logging and hooking prevention, string and constant encryption, debugger detection, and advanced code obfuscation.
+
+## Usage
+### System Requirements
+  - **CPU:** AMD x86_64, 2.5 GHz or higher (6 cores / 12 threads recommended)
+  - **Memory:** 16 GB RAM
+  - **Storage:** 10 GB available SSD/NVMe space
+
+### Usage
+```shell
+# 1. Load the Docker Image
+docker load -i himitsu_core_v1.1.2.tar.gz
+
+# 2. Start the Container
+docker run --name himitsu_core -d -it himitsu_core:v1.1.2
+
+# 3. Upload Your Shell Script (The filename must be "launcher.sh")
+docker cp launcher.sh himitsu_core:/var/work/
+
+# 4. Build the Protected Binary (10–20 min)
+docker exec himitsu_core /var/work/compile.sh
+
+# 5. Download the Generated Binary
+docker cp himitsu_core:/var/work/safeLauncher .
+```
 
 ## About This Repository
 
