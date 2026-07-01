@@ -1,7 +1,6 @@
 <p align="center">
   <a href="https://himitsushell.com/" target="blank"><img src="https://avatars.githubusercontent.com/u/264618628?s=200&v=4" width="120" alt="HimitsuShell Logo" /></a>
 </p>
-<p align="center">shell to obfuscated binary</p>
 <p align="center">
   <img src="https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white" alt="Docker Ready" />
   <img src="https://img.shields.io/badge/License-Commercial-6e7781" alt="Commercial License" />
@@ -11,15 +10,32 @@
 </p>
 
 ## HimitsuShell
-Shell Script Compiler, Obfuscation & DRM
-
-![Demo](assets/demo.gif)
+<img src="assets/demo.gif" width="300">
 
 [HimitsuShell](https://himitsushell.com) compiles shell scripts into obfuscated binaries to protect source code from disclosure.
 
-It includes multiple protection features such as OS-level logging and hooking prevention, string and constant encryption, debugger detection, and advanced code obfuscation.
+## Features
+#### Advanced Obfuscation Techniques
+<img src="assets/features_obfuscation.png" width="250">
 
-## Usage
+Features instruction substitution, indirect calls, indirect branches, basic block splitting, and bogus control flow.
+
+#### OS-Level Logging & Hooking Protection
+<img src="assets/features_os.png" width="250">
+
+Embeds its own shell interpreter, eliminating reliance on the system shell and reducing exposure to OS-level logging and hooking. (e.g., auditd).
+
+#### String & Constant Encryption
+<img src="assets/features_encryption.png" width="250">
+
+All strings and constants in the binary are encrypted, making static analysis more difficult (e.g., IDA, Ghidra).
+
+#### Debugger Detection
+<img src="assets/features_debugger.png" width="250">
+
+Continuously detects debuggers during execution, making dynamic analysis more difficult (e.g., gdb, ptrace, strace).
+
+## Guide
 ### System Requirements
   - **CPU:** AMD x86_64, 2.5 GHz or higher (6 cores / 12 threads recommended)
   - **Memory:** 16 GB RAM
