@@ -35,6 +35,9 @@ All strings and constants in the binary are encrypted, making static analysis mo
 
 Continuously detects debuggers during execution, making dynamic analysis more difficult (e.g., gdb, ptrace, strace).
 
+#### License Verification
+Restricts shell script execution to users with a valid license key.
+
 ## Guide
 ### System Requirements
   - **CPU:** AMD x86_64, 2.5 GHz or higher (6 cores / 12 threads recommended)
